@@ -80,7 +80,7 @@ print(sorted(alist, cmp=None, key=itemgetter(2,1), reverse=False))
 print(sorted(alist, cmp=None, key=lambda x:itemgetter(2,1)(x), reverse=False))
 print(sorted(alist, cmp=None, key=lambda x:map(int, itemgetter(2,1)(x)), reverse=False))
 要注意：字符串的比较看首字母，比如'10'<'3','4'>'310'，
-print(map(int, ('1','2'))) #输出为：[1,2]，对每个参数使用int函数
+print(map(int, ('1','2'))) #输出为：[1,2]，map是对每个参数使用int函数
 	
 
 
